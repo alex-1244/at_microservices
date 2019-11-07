@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  usersapi:
+    image: ${DOCKER_REGISTRY-}usersapi
+    build:
+      context: .
+      dockerfile: UserApi/Dockerfile
+
+  ordersapi:
+    image: ${DOCKER_REGISTRY-}ordersapi
+    build:
+      context: .
+      dockerfile: OrdersApi/Dockerfile
+

@@ -13,7 +13,7 @@ namespace OrdersApi.Controllers
 	{
 		private static readonly string[] Summaries = new[]
 		{
-			"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+			"qwe0", "qwe1", "qwe2", "qwe3", "qwe4", "qew5", "qwe6", "qwe7", "qwe8", "qwe9"
 		};
 
 		private readonly ILogger<WeatherForecastController> _logger;
