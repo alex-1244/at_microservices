@@ -22,7 +22,14 @@
 				}
 			],
 			"UpstreamPathTemplate": "/orders/forecast",
-			"UpstreamHttpMethod": [ "Get" ]
+			"UpstreamHttpMethod": [ "Get" ],
+			"AuthenticationOptions": {
+				"AuthenticationProviderKey": "alex_approves",
+				"AllowedScopes": []
+			},
+			"AddHeadersToRequest": {
+				"UserId": "Claims[userId] > value"
+			}
 		}
 	],
 	"GlobalConfiguration": {
